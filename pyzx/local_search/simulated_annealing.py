@@ -68,9 +68,11 @@ def anneal(g, iters=1000,
         else:
             apply_rand_lc(g1, weight_func=lc_select)
 
-        # probabilistically full_reduce:
-        if random.uniform(0, 1) < full_reduce_prob:
-            full_reduce(g1)
+        # # probabilistically full_reduce:
+        # if random.uniform(0, 1) < full_reduce_prob:
+        #     full_reduce(g1)
+
+        full_reduce(g1)
         sz1 = score(g1)
 
         best_scores.append(sz_best)
