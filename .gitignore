@@ -1,3 +1,7 @@
+/ncp/__pycache__
+/ncp/data
+/ncp/wandb
+
 .mypy_cache
 local-scratchpads
 venv
